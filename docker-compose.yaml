@@ -6,7 +6,6 @@ services:
     volumes:
       - ./7000/data:/data
       - ./7000/conf/:/usr/local/etc/redis
-      - ./7000/logs:/logs
     command: '/usr/local/etc/redis/redis.conf'
 
   redis2:
@@ -14,7 +13,6 @@ services:
     volumes:
       - ./7001/data:/data
       - ./7001/conf/:/usr/local/etc/redis
-      - ./7001/logs:/logs
     command: '/usr/local/etc/redis/redis.conf'
 
   redis3:
@@ -22,7 +20,6 @@ services:
     volumes:
       - ./7002/data:/data
       - ./7002/conf/:/usr/local/etc/redis
-      - ./7002/logs:/logs
     command: '/usr/local/etc/redis/redis.conf'
 
   redis4:
@@ -30,7 +27,6 @@ services:
     volumes:
       - ./7003/data:/data
       - ./7003/conf/:/usr/local/etc/redis
-      - ./7003/logs:/logs
     command: '/usr/local/etc/redis/redis.conf'
 
   redis5:
@@ -38,7 +34,6 @@ services:
     volumes:
       - ./7004/data:/data
       - ./7004/conf/:/usr/local/etc/redis
-      - ./7004/logs:/logs
     command: '/usr/local/etc/redis/redis.conf'
 
   redis6:
@@ -46,9 +41,7 @@ services:
     volumes:
       - ./7005/data:/data
       - ./7005/conf/:/usr/local/etc/redis
-      - ./7005/logs:/logs
     command: '/usr/local/etc/redis/redis.conf'
-
 
 networks:
   default:
