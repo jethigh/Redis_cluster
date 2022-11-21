@@ -1,6 +1,6 @@
 # Description
-This project uses docker and docker compose to run 6 containers with docker in cluster mode.  
-Cluster is composed of 3 master nodes and 3 replicas. One for each master node.  
+This project uses docker and docker compose to run 6 containers with **redis:7.0.4** in cluster mode.  
+Cluster is composed of 3 master nodes and 3 replicas, one for each master node.  
 Since Redis cluster don't support NAT'ed environments host network is used.  
   
 Subsequent servers are assigned a port starting at 7000 and ending at 7005.  

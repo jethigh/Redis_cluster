@@ -4,7 +4,7 @@ services:
   redis1:
     network_mode: host
     hostname: redis1
-    image: redis:7.0.4
+    image: redis:7.0.5
     volumes:
       - ./7000/data:/data
       - ./7000/conf/:/usr/local/etc/redis
@@ -13,7 +13,7 @@ services:
   redis2:
     network_mode: host
     hostname: redis2
-    image: redis:7.0.4
+    image: redis:7.0.5
     volumes:
       - ./7001/data:/data
       - ./7001/conf/:/usr/local/etc/redis
@@ -22,7 +22,7 @@ services:
   redis3:
     network_mode: host
     hostname: redis3
-    image: redis:7.0.4
+    image: redis:7.0.5
     volumes:
       - ./7002/data:/data
       - ./7002/conf/:/usr/local/etc/redis
@@ -31,7 +31,7 @@ services:
   redis4:
     network_mode: host
     hostname: redis4
-    image: redis:7.0.4
+    image: redis:7.0.5
     volumes:
       - ./7003/data:/data
       - ./7003/conf/:/usr/local/etc/redis
@@ -40,7 +40,7 @@ services:
   redis5:
     network_mode: host
     hostname: redis5
-    image: redis:7.0.4
+    image: redis:7.0.5
     volumes:
       - ./7004/data:/data
       - ./7004/conf/:/usr/local/etc/redis
@@ -49,7 +49,7 @@ services:
   redis6:
     network_mode: host
     hostname: redis6
-    image: redis:7.0.4
+    image: redis:7.0.5
     volumes:
       - ./7005/data:/data
       - ./7005/conf/:/usr/local/etc/redis
