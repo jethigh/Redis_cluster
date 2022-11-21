@@ -2,6 +2,8 @@ version: "3.9"
 
 services:
   redis1:
+    network_mode: host
+    hostname: redis1
     image: redis:7.0.4
     volumes:
       - ./7000/data:/data
@@ -9,6 +11,8 @@ services:
     command: '/usr/local/etc/redis/redis.conf'
 
   redis2:
+    network_mode: host
+    hostname: redis2
     image: redis:7.0.4
     volumes:
       - ./7001/data:/data
@@ -16,6 +20,8 @@ services:
     command: '/usr/local/etc/redis/redis.conf'
 
   redis3:
+    network_mode: host
+    hostname: redis3
     image: redis:7.0.4
     volumes:
       - ./7002/data:/data
@@ -23,6 +29,8 @@ services:
     command: '/usr/local/etc/redis/redis.conf'
 
   redis4:
+    network_mode: host
+    hostname: redis4
     image: redis:7.0.4
     volumes:
       - ./7003/data:/data
@@ -30,6 +38,8 @@ services:
     command: '/usr/local/etc/redis/redis.conf'
 
   redis5:
+    network_mode: host
+    hostname: redis5
     image: redis:7.0.4
     volumes:
       - ./7004/data:/data
@@ -37,12 +47,10 @@ services:
     command: '/usr/local/etc/redis/redis.conf'
 
   redis6:
+    network_mode: host
+    hostname: redis6
     image: redis:7.0.4
     volumes:
       - ./7005/data:/data
       - ./7005/conf/:/usr/local/etc/redis
     command: '/usr/local/etc/redis/redis.conf'
-
-networks:
-  default:
-    name: host
